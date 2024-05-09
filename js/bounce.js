@@ -72,7 +72,7 @@ function draw(){
 }
 
 function windowResized() {
-    borderCollider.remove();
+    //borderCollider.remove();
     resizeCanvas(windowWidth, windowHeight);
     
     dynamicH = windowHeight;
