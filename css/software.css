@@ -1,0 +1,126 @@
+
+body {
+
+    background-color:#e6e3da;
+    height: 2000px;
+}
+
+@font-face {
+    font-family: 'Greycliff';
+    src: url("../fonts/greycliff/greycliffcf-medium.otf");
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url("../fonts/clearsans/ClearSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Neufile';
+    src: url("../fonts/neufile/NeufileGrotesk-SemiBold.ttf");
+}
+@font-face {
+    font-family: 'HK Nova';
+    src: url("../fonts/hknova/HKNova-Medium.ttf");
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.first-section{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    height: fit-content;
+   
+}
+
+#video1{
+    position: relative;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    transform: translate(0%, 0);
+    
+}
+
+#intro-text{
+    font-family: 'Greycliff';
+    position: relative;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: right;
+    width: 90%;
+    right: 0;
+    height: fit-content;
+}
+
+.tagline{
+    font-family: 'HK Nova';
+    position: relative;
+    transform: translate(0, -100%);
+    bottom: 10;
+    left: 2%;
+    font-size: 50px;
+    font-weight: 500px;
+    line-height: 55px;
+    width: 90%;
+    opacity: 1;
+    text-align: justify;    
+}
+
+.hero-img{
+    animation: fadein 1s ease-in-out 0s 1 normal forwards;
+    position: relative;
+    width: 100%;
+    left: 0;
+
+}
+
+#measure{
+    height: 100;
+    width: 100;
+    background-color: lawngreen;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 370;
+}
+
+
+
+
+
+.disappear {
+    animation: fadeout .5s ease-in-out 0s 1 normal forwards;
+}
+
+.dynamic-txt{
+    position: absolute;
+    top: 500;
+    left: 500;
+    font-size: 75;
+    z-index: +10;
+
+}

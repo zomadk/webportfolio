@@ -1,0 +1,28 @@
+body{
+    background-color: #d5ccc4;
+
+}
+
+section{
+    position: relative;
+    display: grid;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 40%;
+
+}
+
+.media{
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    margin-top: 5%;
+    width: 100%;
+
+}
+
+
+
+div{
+    border: 1px solid black;
+}

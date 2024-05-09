@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Helvet';
+    src: url("../fonts/helvet/HelveticaNeue.ttf")
+}
+
+@font-face {
+    font-family: 'Penthouse';
+    src: url("../fonts/penthouse/Penthouse-Serial\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "HelveticaBlack";
+    src: url("https://db.onlinewebfonts.com/t/37e97cab0a53ea0bcb70f8a28ded186a.eot");
+    src: url("https://db.onlinewebfonts.com/t/37e97cab0a53ea0bcb70f8a28ded186a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/37e97cab0a53ea0bcb70f8a28ded186a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/37e97cab0a53ea0bcb70f8a28ded186a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/37e97cab0a53ea0bcb70f8a28ded186a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/37e97cab0a53ea0bcb70f8a28ded186a.svg#Helvetica Neue W02 95 Black")format("svg");
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#vert-line{
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 50px;
+    transform: translate(-50%, 0);
+    top: 0;
+    left: 50%;
+}
+
+#horiz-line{
+    background-color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+}
+
+#everything{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+}
+
+#top-left{
+    width: 100%;
+    text-align: center;
+    overflow:hidden;
+    padding-bottom: 50px;
+}
+#zoma{
+    position: relative;
+    font-family: 'HelveticaBlack';
+    height: fit-content;
+    width: 100%;
+    font-weight: 1000px;
+
+    
+}
+
+.fullsize{
+    position: relative;
+    transform: translate(0, -50%);
+    font-size: 800px;
+    top: 30%;
+    
+}
+
+.madu-full{
+    position: relative;
+    font-family: 'HelveticaBlack';
+    transform: translate(0, -50%);
+    font-size: 400px;
+    margin-bottom: -200px;
+}
+
+.midsize{
+    position: relative;
+    transform: translate(0, -50%);
+    top: 35%;
+    font-size: 600px;
+
+}
+
+.madu-mid{
+    position: relative;
+    font-family: 'HelveticaBlack';
+    transform: translate(0, -50%);
+    top: 10%;
+    font-size: 300px;
+}
+
+
+.smallsize{
+    position: relative;
+    transform: translate(0, -50%);
+    top: 50%;
+    font-size: 600px;
+    line-height: 600px;
+
+}
+
+.madu-small{
+    opacity: 0;;
+
+}
+
+#compdes{
+    position: relative;
+    font-family: 'Helvet';
+    font-size: 100px;
+    transform: translate(0, -50%);
+    top: 0%;
+    font-weight: 400;
+}
+
+
+.dynamic-txt{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-size: 200px;
+    z-index: +10;
+    color: white;
+    opacity:0;
+}
+
+#top-right{
+    width: 100%;
+    padding-left: 10;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    border: 1px solid white;
+
+}
+
+#border-div{
+    position: relative;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 50px;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+
+}
+
+
+
+#about-text{
+    font-family: 'Penthouse';
+    font-size: 60px;
+    text-align:justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    
+}
+
+.menu{
+    font-family: 'Penthouse';
+    font-size: 60px;
+    font-weight: 100;
+    display: inline;
+    position: relative;
+    bottom: -100px;
+    border: 1px solid white;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 50px;
+    height: fit-content;
+    z-index: +10;
+    text-decoration: none
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+#bottom-left{
+    padding-top: 25px;
+
+}
+
+
+
+
