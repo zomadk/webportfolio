@@ -1,8 +1,11 @@
+html{
+    zoom: 30%
+}
+
 body{
     background-color: #d5ccc4;
 
 }
-
 section{
     position: relative;
     display: grid;
