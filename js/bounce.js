@@ -130,12 +130,12 @@ else{
 }
 
 function windowResized() {
-    borderCollider.remove();
+   /* borderCollider.remove();
 
     for (let i = 0; i < terraincount; i++) {
         terrain.remove();
         
-    }
+    }*/
     
 
     dynamicH = windowHeight;
