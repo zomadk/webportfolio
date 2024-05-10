@@ -24,11 +24,11 @@ $(document).ready(function(){
 
    // $("#software-body").animate({scrollTop: 0});
 
+   setTimeout(function(){
+        $("#software-body").animate({scrollTop: 70}, 1200);
+        }, 500);
+/* 
     setTimeout(function(){
-        $("#software-body").animate({scrollTop: 370}, 1200);
-        }, 2000);
-
-     /*setTimeout(function(){
         $(".hero-img").addClass("disappear")   
         $(".tagline").addClass("disappear")   
     }, 7000);*/
@@ -53,6 +53,10 @@ $(window).on('resize', function() {
     .html(windowwide)*/
 
     $(".tagline").css({"font-size": scaleTextRate, "line-height": scaleLineRate + "px"})
+
+   /* if(windowwide < 4000){
+        $("#info-tex")
+    }*/
     
 
 })

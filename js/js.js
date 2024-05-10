@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
     
-    if(windowwide > 5160){
+    if(windowwide > 1290){
         $("#zoma").html("ZOMA")
         $("#zoma").removeClass("midsize")
         $("#zoma").removeClass("smallsize")
@@ -28,7 +28,7 @@ $(document).ready(function(){
         $("#madu").addClass("madu-full")
     }
 
-    if(windowwide < 5160 && windowwide > 3900){
+    if(windowwide < 1290 && windowwide > 960){
         $("#zoma").html("ZOMA")
         $("#zoma").removeClass("fullsize")
         $("#zoma").removeClass("smallsize")
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     }
 
-    if(windowwide < 3900){
+    if(windowwide < 960){
         $("#zoma").html("ZO<br>MA")
         $("#zoma").removeClass("midsize")
         $("#zoma").removeClass("fullsize")
@@ -54,88 +54,88 @@ $(document).ready(function(){
         $("#madu").removeClass("madu-full")
         $("#madu").addClass("madu-small")
     }
-    if(windowwide > 3900){
+    if(windowwide > 960){
         $("#compdes").css("opacity", "1")
 
     }
 
 //WIDE SCREEN RESIZING
-    if(windowwide > 5160 && windowhigh < 2600 ){
+    if(windowwide > 1290 && windowhigh < 600 ){
         $("#compdes").css("opacity", "0")
-        $(".madu-full").css("top", "-100px")
-        $("#zoma").css("font-size", "800px")
+        $(".madu-full").css("top", "-50px")
+        $("#zoma").css("font-size", "200px")
 
     }
-    if(windowwide > 5160 && windowhigh < 2260 ){
+    if(windowwide > 1290 && windowhigh < 500 ){
         $("#madu").css("opacity", "0")
         $(".fullsize").css("top", "50%")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
     }
 
-    if(windowwide > 5160 && windowhigh > 2600 ){
+    if(windowwide > 1290 && windowhigh > 600 ){
         $("#compdes").css("opacity", "1")
         $(".madu-full").css("top", "0%")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
 
     }
-    if(windowwide > 5160 && windowhigh > 2260 ){
+    if(windowwide > 1290 && windowhigh > 500 ){
         $("#madu").css("opacity", "1")
         $(".fullsize").css("top", "30%")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
     }
 
 
     //MIDSCREEN RESISING
 
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh < 2300){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh < 600){
         $("#compdes").css("opacity", "0")
         $(".madu-mid").css("top", "0")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
     }
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh < 1900){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh < 500){
         $("#madu").css("opacity", "0");
         $("#zoma").css("top", "50%")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
     }
 
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh > 2300){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh > 600){
         $("#compdes").css("opacity", "1")
         $(".madu-mid").css("top","10%")
         $("#compdes").css("opacity", "1")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
 
     }
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh > 1900){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh > 500){
         $("#madu").css("opacity", "1");
         $("#zoma").css("top", "30%")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
 
     }
 
     //SMALLSCREEN RESIZING
-    if(windowwide < 3900 && windowwide > 2120 && windowhigh > 2120){
+    if(windowwide < 960 && windowwide > 560 && windowhigh > 560){
         $("#zoma")
         .html("ZO<br>MA")
         .css("top","50%")
         $("#madu").css("opacity", "0")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
 
     }
-    if(windowwide < 3900 && windowwide > 2120 && windowhigh < 2120){
+    if(windowwide < 960 && windowwide > 560 && windowhigh < 560){
         $("#zoma")
         .html("Z")
         .css({"top":"50%"})
         $("#madu").css("opacity", "0")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
     }
 
-    if(windowwide < 2120){
+    if(windowwide < 560){
         $("#zoma")
         .html("Z")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
     }
     
@@ -158,7 +158,7 @@ $(window).on('resize', function() {
 
     $(".dynamic-txt").html(windowwide + "\n" + windowhigh)
 
-    if(windowwide > 5160){
+    if(windowwide > 1290){
         $("#zoma").html("ZOMA")
         $("#zoma").removeClass("midsize")
         $("#zoma").removeClass("smallsize")
@@ -169,7 +169,7 @@ $(window).on('resize', function() {
         $("#madu").addClass("madu-full")
     }
 
-    if(windowwide < 5160 && windowwide > 3900){
+    if(windowwide < 1290 && windowwide > 960){
         $("#zoma").html("ZOMA")
         $("#zoma").removeClass("fullsize")
         $("#zoma").removeClass("smallsize")
@@ -183,7 +183,7 @@ $(window).on('resize', function() {
 
     }
 
-    if(windowwide < 3900){
+    if(windowwide < 960){
         $("#zoma").html("ZO<br>MA")
         $("#zoma").removeClass("midsize")
         $("#zoma").removeClass("fullsize")
@@ -195,88 +195,88 @@ $(window).on('resize', function() {
         $("#madu").removeClass("madu-full")
         $("#madu").addClass("madu-small")
     }
-    if(windowwide > 3900){
+    if(windowwide > 960){
         $("#compdes").css("opacity", "1")
 
     }
 
 //WIDE SCREEN RESIZING
-    if(windowwide > 5160 && windowhigh < 2600 ){
+    if(windowwide > 1290 && windowhigh < 600 ){
         $("#compdes").css("opacity", "0")
-        $(".madu-full").css("top", "-100px")
-        $("#zoma").css("font-size", "800px")
+        $(".madu-full").css("top", "-50px")
+        $("#zoma").css("font-size", "200px")
 
     }
-    if(windowwide > 5160 && windowhigh < 2260 ){
+    if(windowwide > 1290 && windowhigh < 500 ){
         $("#madu").css("opacity", "0")
         $(".fullsize").css("top", "50%")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
     }
 
-    if(windowwide > 5160 && windowhigh > 2600 ){
+    if(windowwide > 1290 && windowhigh > 600 ){
         $("#compdes").css("opacity", "1")
         $(".madu-full").css("top", "0%")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
 
     }
-    if(windowwide > 5160 && windowhigh > 2260 ){
+    if(windowwide > 1290 && windowhigh > 500 ){
         $("#madu").css("opacity", "1")
         $(".fullsize").css("top", "30%")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
     }
 
 
     //MIDSCREEN RESISING
 
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh < 2300){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh < 600){
         $("#compdes").css("opacity", "0")
         $(".madu-mid").css("top", "0")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
     }
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh < 1900){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh < 500){
         $("#madu").css("opacity", "0");
         $("#zoma").css("top", "50%")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
     }
 
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh > 2300){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh > 600){
         $("#compdes").css("opacity", "1")
         $(".madu-mid").css("top","10%")
         $("#compdes").css("opacity", "1")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
 
     }
-    if(windowwide < 5160 && windowwide > 3900 && windowhigh > 1900){
+    if(windowwide < 1290 && windowwide > 960 && windowhigh > 500){
         $("#madu").css("opacity", "1");
         $("#zoma").css("top", "30%")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
 
     }
 
     //SMALLSCREEN RESIZING
-    if(windowwide < 3900 && windowwide > 2120 && windowhigh > 2120){
+    if(windowwide < 960 && windowwide > 560 && windowhigh > 560){
         $("#zoma")
         .html("ZO<br>MA")
         .css("top","50%")
         $("#madu").css("opacity", "0")
-        $("#zoma").css("font-size", "600px")
+        $("#zoma").css("font-size", "150px")
 
     }
-    if(windowwide < 3900 && windowwide > 2120 && windowhigh < 2120){
+    if(windowwide < 960 && windowwide > 560 && windowhigh < 560){
         $("#zoma")
         .html("Z")
         .css({"top":"50%"})
         $("#madu").css("opacity", "0")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
     }
 
-    if(windowwide < 2120){
+    if(windowwide < 560){
         $("#zoma")
         .html("Z")
-        $("#zoma").css("font-size", "800px")
+        $("#zoma").css("font-size", "200px")
 
     }
     
@@ -291,6 +291,11 @@ $(window).on('resize', function() {
 
 
 
+
+
+
+
+
 //P5 SKETCH
 
 var s = function(p){
@@ -298,12 +303,14 @@ var s = function(p){
     p.setup = function(){
 
 
-        divWPadding = divWidth - 25;
-        divHPadding = divHeight + 25;
+
+        divWPadding = divWidth - 5;
+        divHPadding = divHeight + 5;
         p.frameRate(60)
 
         p.createCanvas(divWPadding, divHPadding);
-        p.background(100, 0);
+        p.background(121, 33, 241, 0);
+        
     }
 
     p.draw = function(){
@@ -311,12 +318,12 @@ var s = function(p){
         //p.background('#7921f1');
         p.noStroke();
         p.fill(255)
-        p.ellipse(p.mouseX, p.mouseY, 500)
+        p.ellipse(p.mouseX, p.mouseY, 100)
 
     }
 
     p.windowResized = function(){
-        divWPadding = divWidth - 25;
+        divWPadding = divWidth;
         divHPadding = divHeight + 25;
 
         p.createCanvas(divWPadding, divHPadding)
@@ -327,4 +334,11 @@ var s = function(p){
 };
 
 var myp5 = new p5(s, 'c1')
+
+
+function increment() {
+    counter++;
+}
+
+
 
