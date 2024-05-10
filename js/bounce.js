@@ -13,7 +13,7 @@ var halfH, halfW;
 var counter = 0;
 
 function preload(){
-    smil = loadImage("../images/smiley.png")
+    smil = loadImage("smiley.png")
 }
 
 function setup() {
@@ -108,11 +108,11 @@ else{
         
     }   
     if(counter % 2 == 0){
-        smiley.img = '../images/smiley.png'     
+        smiley.img = 'smiley.png'     
 
     }
     if (counter % 2 != 0){
-        smiley.img = '../images/frowney.png'     
+        smiley.img = 'frowney.png'     
 
     }
     //console.log(counter)
@@ -141,7 +141,7 @@ function windowResized() {
     dynamicH = windowHeight;
     dynamicW = windowWidth;
 
-    resizeCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight);
     
 
 
