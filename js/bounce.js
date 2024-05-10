@@ -66,7 +66,7 @@ function draw(){
 
     paddle.position = createVector(mouseX, mouseY); 
 
-    smiley.speed = 10;
+    smiley.speed = 3;
 
     halfH = dynamicH / 2;
     halfW = dynamicW / 2;
