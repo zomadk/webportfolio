@@ -3,9 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/software.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../lib/p5.js"></script>
-    <script src="../js/sp-js.js"></script>
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   
 
     <title>Software</title>
 </head>
@@ -13,40 +17,76 @@
 
 
     <div class="hero-container">
-        <img src="../images/herobw-3.png" class="hero-img">
-        <div class="tagline"> Compose compelling, immersive spatial audio performances and sound artworks, with Spacer. </div>
+        <video src="../vid/spacer-fullscreen.mp4" id="hero-vid" autoplay loop> </video>
+        <div id="hero-text"> 
+            <h1> Intuive Spatial Audio</h1> 
+            <h1>Production Software </h1>
+        </div>
     </div>
-    <section class="daw-sect"> 
-        <img id="daw-img" src="../images/spacer-daw.png" alt="">
 
-    </section>
 
     <section class="first-section"> 
         <div> 
-        <video src="../vid/wheel2.mov" autoplay loop id="video1"></video>
-        <div id="blockline"></div>
+            <video src="../vid/wheel2.mov" autoplay loop id="video1"></video>
         </div>
-    <div>
-        <h1 id="intro-text"> Spacer is a customizable, personal and intuitive software tool for surround sound composition and performance. </h1>
-   </div>
+        <div>
+            <h1 id="intro-text"> Spacer is a customizable, personal software tool for surround sound composition and performance. </h1>
+        </div>
     </section>
     
 
-    <section class="section2">
+    <section class="second-section">
 
         <div id="info-text">
             Designed collaboratively with musicians, Spacer empowers sound artists to get up and running with new technolgy and music presentation formats. This project challenges the traditional interface design frameworks for DAWs <div class="special-char">(</div>Digital Audio Workstations<div class="special-char">) </div> that musicians use to compose and produce music. Veering away from standardized and rigid design, Spacer allows for freedom and editing of the user interface itself. 
             Spacer approaches sound spatialization design in an intuitive way, bringing out our childlike wonder and desire for play.
         </div>
-        <div>
-            <video id="clickvid" src="../vid/clicksloop.mp4" autoplay loop></video>
+        <div id="section2-video">
+            <video id="click-video" src="../vid/clicksloop.mp4" autoplay loop></video>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="slide-imgs" src="../images/ppt1.jpg">
+              <div class="slide-text">Photos courtesy of The Power Plant, 2024</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="slide-imgs" src="../images/ppt2.jpg">
+              <div class="slide-text">Photos courtesy of The Power Plant, 2024</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="slide-imgs" src="../images/ppt3.jpg">
+              <div class="slide-text">Photos courtesy of The Power Plant, 2024</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <br>
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>  
+        </div>
+        <div id="ppt-text">
+            In 2024, multidisciplinary artist Charles Campbell used Spacer sofware to compose a surround sound art piece as a part of his show for the Toronto Biennale.
+            "How many colours has the sea" will be on display at The Power Plant from September 2024 to March 2025. 
         </div>
     </section>
    
 
     <div id="demo-text"> 
-        See a demonstration of Spacer software in use below.
-</div>
+        See a and hear a demonstration of Spacer below.
+    </div>
 
 <div id="ifdiv">
         <iframe src="https://player.vimeo.com/video/944583007?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Spacer Demo Video"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
@@ -54,6 +94,6 @@
     </div>
 
 
-
+    <script src="../js/sp-js.js"></script>
 </body>
 </html>
